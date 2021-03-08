@@ -1,0 +1,461 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --accent-color: #ff817e;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --main-font: "Rufina", serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section {
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 1px solid tomato;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sec-title {
+  color: #1e2528;
+  font-size: 42px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: block;
+  max-width: 109px;
+}
+
+.col-md-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.row-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 19px;
+  align-self: flex-end;
+  align-items: flex-end;
+  padding-bottom: 97px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+.navigation-link {
+  margin-right: 30px;
+  color: #263a41;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+/* -= HERO -- */
+.hero {
+  padding-top: 97px;
+  padding-bottom: 229px;
+}
+.banner-hero {
+  background-image: url(../image/spa.png);
+  background-repeat: no-repeat;
+  background-position: left center/12.5%;
+  padding: 12% 0;
+  width: 43.4%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.banner-spa {
+  color: #ff817e;
+  display: block;
+  font-family: "Rufina", serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+.banner-beauty {
+  color: #1e2528;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 25px;
+  width: 572px;
+  margin-bottom: 47px;
+}
+
+.banner-disc {
+  width: 499px;
+  margin-bottom: 54px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-link {
+  display: flex;
+  font-size: 15px;
+  line-height: 27px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+  text-align: right;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ff817e;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 170px;
+  padding: 20px 15px;
+  margin-right: 85px;
+}
+
+/* -- about -- */
+.about {
+  padding-bottom: 71px;
+}
+
+.sec-heading img {
+  max-width: 84px;
+  margin: 0 auto 40px;
+}
+
+.sec-heading .tagline {
+  color: #888;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.8;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.sec-desc {
+  text-align: center;
+  color: #6c6c6f;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+}
+.sec-heading .sec-desc {
+  margin-bottom: 70px;
+}
+
+.read-more-about {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  background: var(--accent-color);
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: 170px;
+  height: 51px;
+  cursor: pointer;
+  border-radius: 50px;
+  align-self: center;
+  padding-top: 12px;
+}
+
+.read-more-about:hover {
+  color: #212529;
+}
+
+/* .button-about {
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #ff817e;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  min-width: 170px;
+  min-height: 51px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50px;
+  text-align: center;
+} */
+
+.sec-heading .btn-round {
+  color: #fff;
+  padding: 20px 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.sec-heading .btn-round:hover {
+  color: #343a40;
+}
+/* --service--*/
+.service {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-bottom: 81px;
+}
+.owl-stage {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+}
+
+.stage-item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.service .container,
+.owl-stage {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-sec {
+  margin-bottom: 70px;
+}
+
+.procedures-list {
+  display: flex;
+}
+.title-prof {
+  color: #263a41;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  text-align: center;
+}
+.read-more-link {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--main-font);
+  text-align: center;
+  background-color: #30383b;
+  border-radius: 50px;
+  padding: 21px 48px;
+  text-transform: uppercase;
+  line-height: 0.8;
+  min-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.procedures-item:hover .read-more-link {
+  background-color: var(--accent-color);
+}
+.procedures-item {
+  flex-basis: calc(100% / 3 - 28px);
+  margin-left: 28px;
+  width: 360px;
+  border: 1px solid #e3e6ea;
+  text-align: center;
+  padding: 20px 20px 46px;
+}
+.procedures-item:hover {
+  border: none;
+  box-shadow: 0 10px 20px #e3e6ea;
+}
+
+.procedures-item .title-prof {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.procedures-item .sec-desc {
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  padding-top: 138px;
+  padding-bottom: 138px;
+  background-color: #fff9f8;
+}
+
+.testimonial .sec-heading {
+  margin-bottom: 50px;
+}
+
+.testimonial-list .sec-desc {
+  background: #fff9f8;
+}
+
+.client-info {
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-info span {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.thumb {
+  border-radius: 50%;
+  margin-bottom: 22px;
+  margin-top: 49px;
+  height: 76px;
+  width: 76px;
+  di
+}
+
+/* CONTENT */
+.content {
+  padding-bottom: 207px;
+  background-color: #fff9f8;
+}
+.quote {
+  margin: 0 auto 50px;
+}
+.jack {
+  border-radius: 38px;
+  margin: 0 auto 15px;
+}
+.content-list {
+  width: 964px;
+  text-align: center;
+  margin: 0 auto;
+}
+.content-description {
+  font-size: 18px;
+  line-height: 1.94;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  margin-bottom: 45px;
+}
+.client-name {
+  font-size: 22px;
+  line-height: 1.59;
+  color: var(--title-color);
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
