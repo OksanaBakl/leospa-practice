@@ -459,3 +459,19 @@ img {
   font-family: var(--secondary-font);
   text-align: center;
 }
+
+.backround {
+  margin: 0 auto;
+  padding: 40px;
+width: 600px;
+height: 400px;
+border: 10px dashed tomato;
+background-repeat: no-repeat;
+background-image: url(../image/Beauty\ Care.jpg);
+ background-image: radial-gradient(
+    circle at center, blue 10%, yellow 50%, red 40%);
+background-size: auto;
+background-origin: border-box;
+color: turquoise;
+/* background-clip: content-box; */
+}
